@@ -35,7 +35,7 @@ export default function Login() {
                     <div className="text-zinc-700 text-sm font-normal leading-tight">Or Login with</div>
                     <div className="w-2.5 h-px border border-blue-600"></div>
                 </div>
-                <div className='grid grid-cols-3 gap-10 px-10 mb-3'>
+                <div className='flex justify-center gap-10 px-10 mb-3'>
                     <div className="w-16 h-16 p-5 rounded-lg border border-blue-600 border-opacity-10 justify-center items-center gap-2.5 inline-flex">
                         <img className="h-8 object-contain" src={googleLogo} />
                     </div>
