@@ -31,7 +31,7 @@ export default function Landing() {
         <>
             {status === 'splash' ? (
                 <div className="flex flex-col items-center justify-center text-center w-full h-screen">
-                    <div className="font-title text-3xl text-main">TASK MANAGEMENT</div>
+                    <div className="font-title text-3xl text-blue-600">TASK MANAGEMENT</div>
                 </div>
             ) : status === 'first' || status === 'second' || status === 'third' ? (
                 <div className="flex items-center justify-center w-full h-screen text-center">
@@ -41,7 +41,7 @@ export default function Landing() {
                             <circle cx="21" cy="5" r="5" fill={status === 'second' ? '#006EE9' : '#EEF5FD'} />
                             <circle cx="37" cy="5" r="5" fill={status === 'third' ? '#006EE9' : '#EEF5FD'} />
                         </svg>
-                        <div className="text-main text-xs font-medium cursor-pointer" onClick={() => { navigate('/login') }}>Skip</div>
+                        <div className="text-blue-600 text-xs font-medium cursor-pointer" onClick={() => { navigate('/login') }}>Skip</div>
                     </div>
                     <div className='text-black text-center px-7'>
                         { status === 'first' ? (
@@ -67,7 +67,7 @@ export default function Landing() {
                         ) }
                     </div>
                     <div className='absolute bottom-0 left-0 right-0 px-4 py-5'>
-                        <button onClick={nextStep} className='py-4 px-10 bg-main rounded-xl w-full text-white'>Get Started</button>
+                        <button onClick={nextStep} className='py-4 px-10 bg-blue-600 rounded-xl w-full text-white'>Get Started</button>
                     </div>
                 </div>
             ) : (

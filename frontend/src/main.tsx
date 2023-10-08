@@ -9,6 +9,8 @@ import {
 
 import Landing from './pages/landing';
 import Login from './pages/login';
+import Register from './pages/register';
+import Verification from './pages/verification';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />
+  },
+  {
+    path: "/register",
+    element: <Register />
+  },
+  {
+    path: '/verification',
+    element: <Verification />
   }
 ]);
 
